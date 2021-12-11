@@ -1,0 +1,50 @@
+:root {
+  --color-dark: #22272e;
+  --color-light: #fff;
+  --color-blue: #539bf5;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.main-nav {
+  padding: 1rem 0;
+}
+
+.main-nav li {
+  font-size: 1.25rem;
+}
+
+.main-nav li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}

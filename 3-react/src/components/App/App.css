@@ -1,0 +1,22 @@
+.app {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.app__title {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  color: #000;
+  cursor: pointer;
+}
+.button[disabled] {
+  cursor: not-allowed;
+}
+.button:not(:last-child) {
+  margin-right: 1rem;
+}
