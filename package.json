@@ -2,7 +2,9 @@
   "name": "git-rec",
   "version": "0.0.1",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "setup": "node setup.js"
+  },
   "dependencies": {},
   "devDependencies": {
     "gh-pages": "^3.2.3",
