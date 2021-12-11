@@ -1,0 +1,6 @@
+.image-container {
+  width: 100vw;
+  height: 100vh;
+  background: #282c34 url('./dayz.jpg') no-repeat center center;
+  background-size: cover;
+}

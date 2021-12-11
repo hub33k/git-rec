@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/x-icon;" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>2 - forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="../common/common.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <form id="form">
+        <div class="title-input">
+          <label for="title">Book title</label>
+          <input type="text" name="title" id="title" placeholder="Book title" />
+          <span
+            class="status-icon valid-icon fa fa-light fa-circle-check"
+          ></span>
+          <span
+            class="status-icon invalid-icon fa fa-light fa-circle-exclamation"
+          ></span>
+          <div class="error"></div>
+        </div>
+
+        <div class="author-input">
+          <label for="author">Book author</label>
+          <input
+            type="text"
+            name="author"
+            id="author"
+            placeholder="Book author"
+          />
+          <span
+            class="status-icon valid-icon fa fa-light fa-circle-check"
+          ></span>
+          <span
+            class="status-icon invalid-icon fa fa-light fa-circle-exclamation"
+          ></span>
+          <div class="error"></div>
+        </div>
+
+        <div class="priority-input">
+          <label for="priority">Priority (1-5)</label>
+          <input
+            type="number"
+            name="priority"
+            id="priority"
+            placeholder="priority"
+            min="1"
+            max="5"
+            value="1"
+          />
+          <span
+            class="status-icon valid-icon fa fa-light fa-circle-check"
+          ></span>
+          <span
+            class="status-icon invalid-icon fa fa-light fa-circle-exclamation"
+          ></span>
+          <div class="error"></div>
+        </div>
+
+        <div class="category-input">
+          <label for="category">Category</label>
+          <select name="category" id="category">
+            <option value="action">Action</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="horror">Horror</option>
+          </select>
+        </div>
+
+        <div class="submit-input">
+          <button type="submit" name="submit">Submit</button>
+        </div>
+      </form>
+
+      <div id="list"></div>
+    </div>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>

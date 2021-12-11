@@ -1,0 +1,39 @@
+.button-generate {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* ================================================================ */
+
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.list-container ul {
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.list-container ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.even-numbers-container,
+.odd-numbers-container {
+  display: flex;
+  flex-direction: column;
+}

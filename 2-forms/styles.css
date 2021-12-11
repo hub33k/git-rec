@@ -1,0 +1,86 @@
+/* Form */
+form {
+  line-height: 1.5;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+form > div:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+button {
+  width: 300px;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: solid 1px #333;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+button:hover {
+  opacity: 0.9;
+}
+button:active {
+  transform: translateY(1px);
+}
+
+label {
+  display: block;
+}
+
+[type='checkbox'] + label {
+  display: inline-block;
+}
+
+.error {
+  font-size: 1rem;
+  color: red;
+}
+
+.status-icon {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.valid-icon {
+  color: green;
+}
+.invalid-icon {
+  color: red;
+}
+
+/* Books table */
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border: 1px solid #000;
+}
+th,
+td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+th:last-child,
+td:last-child {
+  border-right: 1px solid #000;
+}
+th {
+  font-weight: bold;
+}
+td {
+  padding: 0.5rem 1rem;
+}
+tr > td:first-child {
+  text-align: center;
+}
